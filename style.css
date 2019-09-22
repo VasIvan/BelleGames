@@ -1,0 +1,461 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 180%;
+  color: #555;
+  text-align: center;
+}
+
+/*NAVBAR*/
+.bg-darkblack{
+  background: rgba(0, 0, 0);
+}
+
+.nav-link::before{
+  content: '|' ;
+  color: #ba0c2f;
+  margin-right: 5px;
+  font-weight: 600;
+}
+/*NAVBAR END*/
+
+.parallax1 {
+  background: url(./img/characters2.jpg);
+  min-height: 100%;
+}
+
+.parallax2 {
+  background: url(./img/background2.png);
+  min-height: 60%;
+}
+
+.parallax3 {
+  background: url(./img/background3.png);
+  min-height: 60%;
+}
+
+.parallax4 {
+  background: url(./img/background4.png);
+  min-height: 60%;
+}
+
+.parallax1,
+.parallax2,
+.parallax3,
+.parallax4 {
+  position: relative;
+  opacity: 0.75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.heading {
+  position: absolute;
+  color: #fff;
+  font-size: 500%;
+  top: 10%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 8px #000;
+  font-weight: bold;
+}
+
+
+
+
+.heading-sm {
+  position: absolute;
+  top: 45%;
+  color: #fff;
+  width: 100%;
+  font-size: 250%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 20px #ba0c2f;
+  font-weight: 600;
+}
+
+
+.section1{
+  overflow: auto;
+  background: url(./img/tutorial.png);
+  min-height: 400px;
+  font-weight: 600;
+}
+
+
+.dark-text {
+  overflow: auto;
+  background: url(./img/darkbackground.png);
+  color: #fff;
+  min-height: 400px;
+  font-weight: 600;
+}
+
+.btn-stl{
+  float: left;
+  background: #555;
+  border: rgb(61, 61, 75) solid 3px;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0px 350px 0;
+  height:120px;
+  width: 120px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-stl2{
+  float: left;
+  background: #555;
+  border: rgb(61, 61, 75) solid 3px;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0px 350px 0;
+  height:400px;
+  width: 400px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-stl-bob{
+  float: left;
+  background: #555;
+  border: rgb(61, 61, 75) solid 3px;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0px 350px 0;
+  height:120px;
+  width: 120px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-stl2-bob{
+  float: left;
+  background: #555;
+  border: rgb(61, 61, 75) solid 3px;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0px 350px 0;
+  height:400px;
+  width: 400px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+/*
+.btn-icon{
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+*/
+
+.icon{
+  text-align: left;
+  padding-left: 20%;
+}
+
+.icon-bob{
+  text-align: left;
+  padding-left: 20%;
+}
+
+.line{
+  text-align: left;
+  margin-top: 0%;
+  position: absolute;
+  height: 12px;
+  background: #fff;
+  border-radius: 8px;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.45s;
+}
+
+.top{
+  top: 20px;
+  width: 60px;
+}
+
+.middle{
+  top: 40px;
+  width: 50px;
+}
+
+.bottom{
+  top: 60px;
+  width: 40px;
+}
+
+.icon.close .top{
+  transform: rotate(45deg);
+  top: 40px;
+  left: 15px;
+}
+
+.icon.close .middle, .icon.close .bottom{
+  transform: rotate(-45deg);
+  top: 40px;
+  left: 15px;
+}
+
+.icon.close .bottom{
+  transform: rotate(-45deg);
+  top: 45px;
+  left: 15px;
+}
+
+.icon-bob.close .top{
+  transform: rotate(45deg);
+  top: 40px;
+  left: 15px;
+}
+
+.icon-bob.close .middle, .icon-bob.close .bottom{
+  transform: rotate(-45deg);
+  top: 40px;
+  left: 15px;
+}
+
+.icon-bob.close .bottom{
+  transform: rotate(-45deg);
+  top: 45px;
+  left: 15px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0px 0px 0px 20px;
+  padding: 20px 100px 100px 100px;
+  display: none;
+}
+
+.nav-list-bob {
+  list-style-type: none;
+  margin: 0px 0px 0px 20px;
+  padding: 20px 100px 100px 100px;
+  display: none;
+}
+
+.nav-list li {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Change the link color on hover */
+.nav-list li:hover {
+  background-color: #ba0c2f;
+  color: white;
+  border-radius: 0 00px 350px 0;
+}
+
+.nav-list li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Change the link color on hover */
+.nav-list li a:hover {
+  background-color: #ba0c2f;
+  color: white;
+  border-radius: 0 00px 350px 0;
+}
+
+.nav-list-bob li {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Change the link color on hover */
+.nav-list-bob li:hover {
+  background-color: #ba0c2f;
+  color: white;
+  border-radius: 0 00px 350px 0;
+}
+
+.nav-list-bob li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Change the link color on hover */
+.nav-list-bob li a:hover {
+  background-color: #ba0c2f;
+  color: white;
+  border-radius: 0 00px 350px 0;
+}
+
+#steamprf{
+  width: 250px;
+  height: 80px;
+  cursor:pointer;
+}
+
+#cmsoonprf{
+  width: 250px;
+  height: 100px;
+}
+
+#bobprf{
+  width: 250px;
+  height: 250px;
+}
+
+#kuuraprf{
+  width: 250px;
+  height: 250px;
+}
+
+#bglogo{
+  width: 150px;
+  height: 50px;
+}
+
+/*EMAIL FORM*/
+.material-icons{
+  font-size: 40px !important;
+  padding-right: 10px;
+}
+
+.formttl{
+  float: right;
+}
+
+.btn-blue{
+  background: #ba0c2f !important;
+  border: #000;
+  padding-top: 12px;
+  margin-bottom: 70px;
+}
+
+.btn-blue:hover{
+  opacity: 0.7;
+}
+
+#contmsg{
+  height: 115px;
+}
+/*EMAIL FORM END*/
+
+/*FOOTER START*/
+#footer-some{
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.element-one h3, .element-two h3, .element-three h3{
+  font-weight: 600;
+} 
+
+.element-two h3::before{
+  content: '|';
+  color: #ba0c2f;
+  margin-right: 10px;
+}
+
+.element-three h3::before{
+  content: '|';
+  color: #ba0c2f;
+  margin-right: 10px;
+}
+
+.fa {
+  padding: 10px 12px !important;
+  font-size: 30px !important;
+  width: 50px !important;
+  height: 50px !important;
+  text-decoration: none !important;
+  margin: 5px 2px !important;
+  border-radius: 50% !important;
+  background: #ba0c2f !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.cont{
+    vertical-align: top;
+    margin-left: 10px;
+    letter-spacing: -1px;
+}
+
+.footer-name{
+    text-align: center;
+    background: #ba0c2f;
+    color: #fff;
+    line-height: 75px;
+    margin-bottom: 0;
+}
+/*FOOTER END*/
+
+
+
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 250%;
+  }
+  .heading-sm {
+    font-size: 180%;
+  }
+  .two-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .btn-stl{
+    height: 100px;
+    width: 100px;
+  }
+
+  #kuuraprf{
+    width: 150px;
+    height: 150px;
+  }
+
+  #bobprf{
+    width: 150px;
+    height: 150px;
+  }
+
+  #bglogo{
+    width: 110px;
+    height: 40px;
+  }
+
+  .nav-link{
+    text-align: left;
+  }
+
+}
+
+
+
+
